@@ -33,19 +33,19 @@ let menuItems = [
    const listElements = menuItems.map(liText => {
       const newList = document.createElement('li')
       newList.textContent = liText
-      uoList.appendChild(NewList)
+      uoList.appendChild(newList)
     })
   // Step 3: Using a DOM selector, select the menu button (the element with a class of 'menu-button') currently on the DOM.
 
-    const menuButton = document.querySelector('menu-button')
+    const menuButton = document.querySelector('.menu-button')
 
 
   // Step 4: add a click event listener to the menu button. When clicked it should toggle the class 'menu--open' on the menu (your div with a 'menu' class).
-  const articleToggle = () => {
-    article.classList.toggle('article-open')
+  // const articleToggle = () => {
+  //   article.classList.toggle('article-open')
   
-  expandButton.addEventListener('click', articleToggle);
-  }
+  // expandButton.addEventListener('click', articleToggle);
+  // }
 
 
   const menuToggle = () => {
@@ -56,10 +56,15 @@ let menuItems = [
 
   // Step 5: return the menu component.
 
-  return menuMaker;
+  return menuDiv;
+  
   }
 
+  const myMenu = menuMaker(menuItems)
+  let myHeader = document.querySelector('.header')
+  myHeader.appendChild(myMenu)
   
+
   // Step 6: add the menu component to the DOM.
   
 
