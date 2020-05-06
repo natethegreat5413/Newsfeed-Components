@@ -23,16 +23,16 @@ let menuItems = [
 
   function menuMaker(menuItems){
     const menuDiv = document.createElement('div')
-    menuDiv.className.add('menu')
+    menuDiv.classList.add('menu')
     const uoList = document.createElement('ul')
     menuDiv.append(uoList)
   
   // Step 2: Inside this function, iterate over the array creating a list item <li> element for each item in the array. 
   // Add those items to the <ul>
 
-  const headerDiv = document.querySelector('.header')
+  
 
-  const listElements = menuItems.map(text => {
+  const listElements = menuItems.map( text => {
     const newList = document.createElement('li')
     newList.textContent = text
     uoList.append(newList)
@@ -50,11 +50,11 @@ let menuItems = [
 
   // Step 5: return the menu component.
   return menuDiv;
-
   }
   // Step 6: add the menu component to the DOM.
 
-
+  const headerDiv = document.querySelector('.header')
+  headerDiv.append(menuMaker(menuItems))
 
 
 

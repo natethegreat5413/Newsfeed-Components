@@ -86,7 +86,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Nate Cowley is the Man',
+    date: 'April 6th, 2020',
+    firstParagraph: 'I probably dont even need to tell you so i will save you the time and not tell you',
+    secondParagraph: 'Alright well for one hes a damn good cook thats for sure',
+    thirdParagraph: 'this is tough stuff.  I dont even know if im doing this right by adding to the array but its working so im gonna go for it.'
   }
+
 ];
 
 
